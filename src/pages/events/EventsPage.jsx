@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState} from 'react'
 import '../events/EventsPage.css'
 
 import Carousel from "react-multi-carousel";
@@ -8,6 +8,9 @@ import { useCollapse } from 'react-collapsed'
 
 
 function EventsPage() {
+  const [isExpanded, setExpanded] = useState(false)
+  const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded })
+
   const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -29,27 +32,24 @@ function EventsPage() {
 };
   return (
     <div>
-      {/*main container*/}
-      <div className="event-page-container">
+        {/*main container*/}
+        <div className="event-page-container">
 
-          {/*content section*/}
-              <h1>Explore IEEE Student Branch DITU</h1>
-              <br />
-              <p className="event-content-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque facilis dolores,
-                  labore accusamus repellendus, suscipit nam dolor itaque voluptatum incidunt ipsum,
-                  asperiores error amet hic magnam explicabo culpa magni expedita!
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corporis provident explicabo maxime
-                  voluptatum. Ut, repellendus nostrum id sunt aperiam assumenda, ab, perspiciatis delectus a voluptatum
-                  provident dolorem incidunt explicabo.
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi adipisci magni mollitia neque inventore
-                  vero blanditiis, quasi aliquam cupiditate optio. Sequi pariatur perferendis similique rerum veritatis id
-                  totam harum ad!</p>
-              <br />
-          {/*content section close*/}
+            {/*content section*/}
+            <h1>Explore IEEE Student Branch DITU</h1>
+            <br />
+            <p className="event-content-section">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit tenetur perferendis obcaecati. Mollitia atque nulla pariatur iste nostrum nisi minus illo est! Nihil non quas alias commodi voluptas nemo dolorum.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta itaque perferendis non cum, nulla tenetur eum repudiandae dolore similique consequuntur nisi adipisci! Pariatur aperiam dolorum cupiditate culpa ad quod modi.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam distinctio incidunt explicabo amet ipsum porro consectetur in autem unde soluta possimus sint qui repellendus omnis, quaerat totam error. Doloribus, odit.
+            </p>
+            <br />
+            {/*content section close*/}
 
-          <h1>Workshop</h1>
-          {/*event horizontal cards section*/}
-          <div className="event-hori-cards-container">
+          
+            {/*event horizontal cards section*/}
+            <h1>Workshop</h1>
+            <div className="event-hori-cards-container">
                 
                 {/*card slider*/}
                 <Carousel responsive={responsive}>
@@ -179,88 +179,51 @@ function EventsPage() {
                         </div>
                     </div>
 
-
                 </Carousel>
-          </div>
-          <br />
-          {/*event horizontal cards section close*/}
+                {/*card slider close*/}
+            </div>
+            <br />
+            {/*event horizontal cards section close*/}
 
-          <h1>Youthopia</h1>
-          {/*event vertical cards section*/}
-          <div className="event-ver-cards-container">
-              
-              {/*cards*/}
-              <div className="ver-card">
-                  {/*image*/}
-                  <div className="image">
-                      <img src="https://picsum.photos/200/300" alt="image" />
-                  </div>
-                  {/*description*/}
-                  <div className="des">
+          
+            {/*event vertical cards section*/}
+            <h1>Youthopia</h1>
+            <div className="event-ver-cards-container">
+                {/*cards*/}
+                <div className="ver-card">
+                    {/*image*/}
+                    <img className="image" src="https://picsum.photos/200/300" alt="image" />
+                  
+                    {/*description*/}
+                    <div className="des">
                       <h3>title Here</h3>
                       <br />
                       <h5>Coordinator</h5>
                       <h5>Speaker</h5>
                       <h5>Date</h5>
                       <br />
-                      <p className="text">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores molestiae mollitia, deserunt tenetur
-                          fugiat inventore nesciunt minima sequi ab dolores repudiandae quo obcaecati blanditiis eos nostrum?
-                          Assumenda mollitia eveniet expedita!
-                          <span className="dots">. . .</span>
-                          <span className="moreText">
-                              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae enim neque rerum excepturi ullam
-                              architecto, nobis expedita porro temporibus eveniet quidem dolores magnam natus, harum distinctio
-                              tenetur sint facilis optio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Error reiciendis a
-                              quos odio sapiente, totam temporibus aspernatur, praesentium dolorum, ut cumque iure sed? Suscipit,
-                              vero? Laudantium adipisci quisquam incidunt inventore!
-                          </span>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui autem quo voluptatem. Nihil, commodi molestiae fugiat assumenda quidem tenetur corporis, inventore vitae laboriosam sint illo fuga similique ad maiores iusto!
+                          <section {...getCollapseProps()}>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim veritatis adipisci molestias voluptas minima natus, provident suscipit laborum animi ad dolor laudantium assumenda repellat totam voluptate ut inventore exercitationem vero.
+                          </section>   
                       </p>
                       <br />
                       {/*button*/}
-                      <button className="ver-card-btn">Read More</button>
-                  </div>
-              </div>
-              {/*cards close*/}
+                      <button className='read-more-less-btn' {...getToggleProps({onClick: () => setExpanded((prevExpanded) => !prevExpanded),})}>
+                        {isExpanded ? 'Collapse' : 'Expand'}
+                      </button>
+                </div>
+                {/*cards close*/}
 
-              {/*cards*/}
-              <div className="ver-card">
-                  {/*image*/}
-                  <div className="image">
-                      <img src="https://picsum.photos/200/300" alt="image" />
-                  </div>
-                  {/*description*/}
-                  <div className="des">
-                      <h3>title Here</h3>
-                      <br />
-                      <h5>Coordinator</h5>
-                      <h5>Speaker</h5>
-                      <h5>Date</h5>
-                      <br />
-                      <p className="text">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores molestiae mollitia, deserunt tenetur
-                          fugiat inventore nesciunt minima sequi ab dolores repudiandae quo obcaecati blanditiis eos nostrum?
-                          Assumenda mollitia eveniet expedita!
-                          <span className="dots">. . .</span>
-                          <span className="moreText">
-                              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae enim neque rerum excepturi ullam
-                              architecto, nobis expedita porro temporibus eveniet quidem dolores magnam natus, harum distinctio
-                              tenetur sint facilis optio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Error reiciendis a
-                              quos odio sapiente, totam temporibus aspernatur, praesentium dolorum, ut cumque iure sed? Suscipit,
-                              vero? Laudantium adipisci quisquam incidunt inventore!
-                          </span>
-                      </p>
-                      <br />
-                      {/*button*/}
-                      <button className="ver-card-btn">Read More</button>
-                  </div>
-              </div>
-              {/*cards close*/}
-          </div>
-          {/*event vertical cards section close*/}
-      </div>
+
+            </div>
+            {/*event vertical cards section close*/}
+            
+        </div>
     </div>
-  )
+    </div>
+  );
 }
 
 export default EventsPage
