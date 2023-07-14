@@ -1,5 +1,5 @@
 import React, { useState} from 'react'
-import '../events/EventsPage.css'
+import './Eventspage.css'
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
