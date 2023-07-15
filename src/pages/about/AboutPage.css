@@ -1,3 +1,50 @@
 .about{
     padding-top: 6.5625rem;
 }
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    width: 890.642 px;
+    height: 430px;
+    flex-shrink: 0;
+    position: relative;
+    top: 176px;
+    margin-left:274px ;
+    margin-right: 273.36px;
+    border-radius: 21.997px;
+    background: #FFFEFE;
+    box-shadow: 2.8382837772369385px 2.8382837772369385px 33.34983444213867px 0.7095709443092346px rgba(0, 0, 0, 0.25);
+}  
+.content{
+  position: relative;
+  top: 176px;
+  margin-left: 106px;
+  margin-right:198px ;
+  padding: auto;
+}
+p{
+   display: flex;
+   width: 1136px;
+   height: 157px;
+   flex-direction: column;
+   flex-shrink: 0;
+   color: #1E1E1E;
+   font-family: Arial;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+}
+
+h1{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #005792;
+    font-family: Arial;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
