@@ -63,11 +63,7 @@ li::marker {
 .navbar>.navcontainer>.headingcontainer>.active>.underline {
     background: #53CDE2;
 }
-@media only screen and (max-width: 1176px){
-    .imgdiv{
-        display: none;
-    }
-}
+
 @media only screen and (max-width: 1176px){
     .navbar>.navcontainer>.headingcontainer>li>a{
         display: none;
@@ -93,5 +89,25 @@ li::marker {
         align-items: flex-end;
         justify-content: flex-end;
         width: 5rem;
+        margin-right: 2rem;
     }
+}
+@media only screen and (max-width: 856px){
+    .burguricon{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 5rem;
+        margin-right: 5rem;
+    }
+}
+@media only screen and (max-width: 1176px){
+    .navbar>.navcontainer>.headingcontainer>.active>.underline {
+    display: none;
+}
+}
+@media only screen and (max-width: 1176px){
+    .navbar>.navcontainer {
+    margin-right: 3rem;
+}
 }
