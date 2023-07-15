@@ -1,12 +1,7 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
 .event-page-container {
     display: flex;
     flex-direction: column;
-    padding: 3rem;
+    padding: 9.5625rem 0 0 2rem;
 }
 
 .event-content-section {

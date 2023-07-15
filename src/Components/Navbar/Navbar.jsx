@@ -14,21 +14,27 @@ const Navbar = () => {
           <div className="headingcontainer">
             <li className={`${pathname === "/" ? "active" : ""}`}>
               <Link to="/">HOME</Link>
+              <div className="underline"></div>
             </li>
             <li className={`${pathname === "/about" ? "active" : ""}`}>
               <Link to="/about">ABOUT</Link>
+              <div className="underline"></div>
             </li>
             <li className={`${pathname === "/events" ? "active" : ""}`}>
               <Link to="/events">EVENTS</Link>
+              <div className="underline"></div>
             </li>
             <li className={`${pathname === "/teams" ? "active" : ""}`}>
               <Link to="/teams">TEAM</Link>
+              <div className="underline"></div>
             </li>
             <li className={`${pathname === "/gallery" ? "active" : ""}`}>
               <Link to="/gallery">GALLERY</Link>
+              <div className="underline"></div>
             </li>
             <li className={`${pathname === "/contact" ? "active" : ""}`}>
               <Link to="/contact">CONTACT</Link>
+              <div className="underline"></div>
             </li>
           </div>
         </ul>

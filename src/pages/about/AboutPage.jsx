@@ -1,8 +1,9 @@
 import React from 'react'
+import "./AboutPage.css"
 
 function AboutPage() {
   return (
-    <div>
+    <div className='about'>
       This is the About Page
     </div>
   )
