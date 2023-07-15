@@ -1,5 +1,6 @@
 import React from "react";
 import img from "../../assets/ieeelogo.png";
+import logo from "../../assets/navbar-logo.png"
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 const Navbar = () => {
@@ -36,6 +37,7 @@ const Navbar = () => {
               <Link to="/contact">CONTACT</Link>
               <div className="underline"></div>
             </li>
+            <img src={logo} className="burguricon" alt="img not available"></img>
           </div>
         </ul>
       </div>
