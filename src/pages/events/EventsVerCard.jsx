@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../events/EventsPage.css'
+import './EventsPage.css'
 
 import { useCollapse } from 'react-collapsed'
 
