@@ -43,6 +43,7 @@ li::marker {
 .navbar>.navcontainer>.headingcontainer>li>a {
     text-decoration: none;
     color: white;
+    margin-bottom: 0.5rem;
 }
 
 .navbar>.navcontainer>.headingcontainer>li>.underline {
@@ -57,7 +58,6 @@ li::marker {
 
 .navbar>.navcontainer>.headingcontainer>.active>a {
     color: #53CDE2;
-    margin-bottom: 0.3rem;
 }
 
 .navbar>.navcontainer>.headingcontainer>.active>.underline {
