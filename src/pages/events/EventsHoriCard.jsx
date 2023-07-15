@@ -1,5 +1,5 @@
 import React from 'react'
-import './EventsPage.css'
+import './Eventspage.css'
 
 function EventsHoriCard() {
   return (
