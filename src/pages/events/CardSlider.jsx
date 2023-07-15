@@ -1,5 +1,4 @@
 import React from 'react'
-import '../events/EventsPage.css'
 import EventsHoriCard from './EventsHoriCard';
 
 import Carousel from "react-multi-carousel";
