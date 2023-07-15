@@ -5,8 +5,6 @@ import EventsVerCard from './EventsVerCard';
 
 function EventsPage() {
   return (
-      <div>
-        {/*main container*/}
         <div className="event-page-container">
 
             {/*content section*/}
@@ -34,7 +32,6 @@ function EventsPage() {
                 <EventsVerCard />
             </div>
         </div>
-      </div>
   );
 }
 

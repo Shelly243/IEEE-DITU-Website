@@ -7,3 +7,9 @@
 *::-webkit-scrollbar {
     display: none;
 }
+
+body{
+    background-image: url("./assets/backgroundImage.png");
+    background-repeat: repeat-y;
+    background-size: 100vw;
+}
