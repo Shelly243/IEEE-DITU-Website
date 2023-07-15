@@ -1,49 +1,65 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.navcontainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #005792;
+    color: white;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    overflow: hidden;
+    height: 6.5625rem;
+    position: fixed;
+    z-index: 100;
 }
 
-.navcontainer{
-    display:flex;
-    justify-content:space-between;
-    background-color: #005792;
-    color:white;
-    align-items:center;
-    width: 100%;
-    padding:0 20px;
-    overflow: hidden;
+li::marker {
+    color: #005792;
 }
-li::marker{
-    color:#005792;
+
+.headingcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
-.headingcontainer{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:row;
-    padding:0px;
-    width: 55%;
-}
-.imgdiv{
+
+.imgdiv {
     width: 35%;
 }
-.headingcontainer>li{
-    margin: 2.5rem;
-    color: white;
-    text-decoration: none;
-    font-size: 1.3rem;
+
+.headingcontainer>li {
+    font-family: Arial;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.navbar>.navcontainer>.headingcontainer>li>a{
+
+.navbar>.navcontainer>.headingcontainer>li>a {
     text-decoration: none;
     color: white;
 }
-.navbar>.navcontainer>.headingcontainer>li>a:hover{
+
+.navbar>.navcontainer>.headingcontainer>li>.underline {
+    width: 2.875rem;
+    height: 0.4375rem;
+    border-radius: 0.5625rem;
+}
+
+.navbar>.navcontainer>.headingcontainer>li>a:hover {
     color: #53CDE2;
 }
 
-.navbar>.navcontainer>.active{
-    font-size: 2.5rem;
-    font-weight: 900;
+.navbar>.navcontainer>.headingcontainer>.active>a {
+    color: #53CDE2;
+    margin-bottom: 0.3rem;
 }
 
+.navbar>.navcontainer>.headingcontainer>.active>.underline {
+    background: #53CDE2;
+}
