@@ -1,9 +1,9 @@
 import React from 'react'
 import "./HomePage.css"
-import Image from "./images/Image.png"
-import Create from "./images/Create.png"
-import Learn from "./images/Learn.png"
-import Succeed from "./images/Succeed.png"
+import Image from "../../assets/Image.png"
+import Create from "../../assets/Create.png"
+import Learn from "../../assets/Learn.png"
+import Succeed from "../../assets/Succeed.png"
 
 function HomePage() {
   return (
