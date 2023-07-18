@@ -7,6 +7,7 @@ import EventsPage from "./pages/events/EventsPage";
 import Contact from "./pages/contact/Contact";
 import Navbar from "./Components/Navbar/Navbar";
 import Gallery from "./pages/gallery/Gallery";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="*" element={<HomePage />} />
         </Routes>
+        <Footer/>
       </Router>
     </div>
   );
