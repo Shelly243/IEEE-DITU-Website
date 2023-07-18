@@ -2,13 +2,15 @@ import React, {useState} from "react";
 import img from "../../assets/ieeelogo.png";
 import logo from "../../assets/navbar-logo.png"
 import { Link, useLocation } from "react-router-dom";
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 import "./Navbar.css";
 
 const Navbar = () => {
   const { pathname } = useLocation();
   const [menuOpened, setMenuOpened] = useState(false);
 
-  const showNavbar = () => {
+  const toggleNavbar = () => {
     setMenuOpened(!menuOpened);
   };
   return (
@@ -21,38 +23,33 @@ const Navbar = () => {
           <div
             className={menuOpened ? "headingcontainer" : "headingcontaineropen"}
             activeClassName="active"
-          >
-            <li className={`${pathname === "/" ? "active" : ""}`}>
+          >{menuOpened?<CloseIcon onClick={() => toggleNavbar() } fontSize="large" />:""}
+            <li className={`${pathname === "/" ? "active" : ""}`} onClick={toggleNavbar}>
               <Link to="/">HOME</Link>
               <div className="underline"></div>
             </li>
-            <li className={`${pathname === "/about" ? "active" : ""}`}>
+            <li className={`${pathname === "/about" ? "active" : ""}`} onClick={toggleNavbar}>
               <Link to="/about">ABOUT</Link>
               <div className="underline"></div>
             </li>
-            <li className={`${pathname === "/events" ? "active" : ""}`}>
+            <li className={`${pathname === "/events" ? "active" : ""}`} onClick={toggleNavbar}>
               <Link to="/events">EVENTS</Link>
               <div className="underline"></div>
             </li>
-            <li className={`${pathname === "/teams" ? "active" : ""}`}>
+            <li className={`${pathname === "/teams" ? "active" : ""}`} onClick={toggleNavbar}>
               <Link to="/teams">TEAM</Link>
               <div className="underline"></div>
             </li>
-            <li className={`${pathname === "/gallery" ? "active" : ""}`}>
+            <li className={`${pathname === "/gallery" ? "active" : ""}`} onClick={toggleNavbar}>
               <Link to="/gallery">GALLERY</Link>
               <div className="underline"></div>
             </li>
-            <li className={`${pathname === "/contact" ? "active" : ""}`}>
+            <li className={`${pathname === "/contact" ? "active" : ""}`} onClick={toggleNavbar}>
               <Link to="/contact">CONTACT</Link>
               <div className="underline"></div>
             </li>
           </div>
-          <img
-            src={logo}
-            className="burguricon"
-            alt="img not available"
-            onClick={() => showNavbar()}
-          ></img>
+          {menuOpened?"":<MenuIcon  onClick={() => toggleNavbar() } fontSize="large" />}
         </ul>
       </div>
     </>
