@@ -18,7 +18,10 @@ const Navbar = () => {
           <div className="imgdiv">
             <img className="ieeelogo" src={img} alt="" />
           </div>
-          <div className="headingcontainer" activeClassName="active">
+          <div
+            className={menuOpened ? "headingcontainer" : "headingcontaineropen"}
+            activeClassName="active"
+          >
             <li className={`${pathname === "/" ? "active" : ""}`}>
               <Link to="/">HOME</Link>
               <div className="underline"></div>
@@ -50,7 +53,6 @@ const Navbar = () => {
             alt="img not available"
             onClick={() => showNavbar()}
           ></img>
-      
         </ul>
       </div>
     </>
