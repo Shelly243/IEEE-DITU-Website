@@ -38,11 +38,7 @@
 }
 
 .navbar>.navcontainer>.headingcontainer>svg{
-    font-size: 3rem;
-    display:flex;
-    position: fixed;
-    top: 10px;
-    right: 10px;
+    display: none;
 }
 
 .navbar>.navcontainer>.headingcontainer>li>a {
@@ -119,6 +115,14 @@
 }
 
 @media only screen and (max-width: 1176px) {
+    .navbar>.navcontainer>.headingcontainer>svg{
+        font-size: 3rem;
+        display:flex;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+    
     .navbar>.navcontainer>svg {
         display: flex;
     }
