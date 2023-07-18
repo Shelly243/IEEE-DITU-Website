@@ -1,3 +1,4 @@
+
 .navcontainer {
     display: flex;
     justify-content: space-between;
@@ -9,7 +10,8 @@
     padding: 0 20px;
     overflow: hidden;
     height: 6.5625rem;
-    position: fixed;
+    position:absolute;
+    top: 0px;
     z-index: 100;
 }
 
