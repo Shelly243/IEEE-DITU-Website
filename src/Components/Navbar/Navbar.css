@@ -6,6 +6,7 @@
     color: white;
     align-items: center;
     width: 100%;
+    overflow: hidden;
     padding: 0 20px;
     overflow: hidden;
     height: 6.5625rem;
@@ -65,26 +66,18 @@ li::marker {
 .navbar>.navcontainer>.headingcontainer>.active>.underline {
     background: #53CDE2;
 }
-@media only screen and (max-width: 1176px){
-    .imgdiv{
-        display: none;
-    }
-}
-@media only screen and (max-width: 1176px){
+
+
+/* @media only screen and (max-width: 1176px){
     .navbar>.navcontainer>.headingcontainer>li>a{
         display: none;
     }
-}
-@media only screen and (max-width: 1176px){
-    .navbar>.navcontainer>.headingcontainer>li>a{
-        display: none;
-    }
-}
-@media only screen and (max-width: 1176px){
+} */
+/* @media only screen and (max-width: 1176px){
     .navbar>.navcontainer>.headingcontainer>.active>a {
     display: none;
 }
-}
+} */
 .burguricon{
     display: none;
     width: 100%;
@@ -95,5 +88,59 @@ li::marker {
         align-items: flex-end;
         justify-content: flex-end;
         width: 5rem;
+        margin-right: 8rem;
     }
 }
+
+/* @media only screen and (max-width: 1176px){
+    .navbar>.navcontainer>.headingcontainer>.active>.underline {
+    display: none;
+}
+} */
+@media only screen and (max-width: 1176px){
+    .navbar>.navcontainer {
+    margin-right: 3rem;
+}
+}
+@media only screen and (max-width: 1176px){
+    .navbar>.navcontainer>.headingcontainer>li {
+    margin: 0.5rem;
+}
+}
+
+@media  only screen and (max-width: 1176px){
+.headingcontainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #005792;
+   position: fixed;
+   top: 90px;
+   right: 0px;
+   width: 300px;
+   height: 35vh;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+}
+@media screen and (max-width: 1176px){
+    .navbar>.navcontainer>.headingcontainer>li>a{
+        margin-top: 1.2rem;
+    }
+}
+    
+/* @media only screen and (max-width: 1176px){
+    .navbar>.navcontainer>.headingcontainer>li{
+        display: none;
+    }
+    .navbar>.navcontainer>.burguricon{
+        display: flex;
+        cursor: pointer;
+    }
+    .navbar>.navcontainer>img{
+        width: 4rem;
+    }
+} */
+    
+

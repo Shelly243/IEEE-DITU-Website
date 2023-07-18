@@ -1,10 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import img from "../../assets/ieeelogo.png";
 import logo from "../../assets/navbar-logo.png"
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
+
 const Navbar = () => {
   const { pathname } = useLocation();
+  const [menuOpened, setMenuOpened] = useState(false);
+
+  const showNavbar = () => {
+    setMenuOpened(!menuOpened);
+  };
   return (
     <>
       <div className="navbar">
@@ -12,7 +18,7 @@ const Navbar = () => {
           <div className="imgdiv">
             <img className="ieeelogo" src={img} alt="" />
           </div>
-          <div className="headingcontainer">
+          <div className="headingcontainer" activeClassName="active">
             <li className={`${pathname === "/" ? "active" : ""}`}>
               <Link to="/">HOME</Link>
               <div className="underline"></div>
@@ -37,8 +43,14 @@ const Navbar = () => {
               <Link to="/contact">CONTACT</Link>
               <div className="underline"></div>
             </li>
-            <img src={logo} className="burguricon" alt="img not available"></img>
           </div>
+          <img
+            src={logo}
+            className="burguricon"
+            alt="img not available"
+            onClick={() => showNavbar()}
+          ></img>
+      
         </ul>
       </div>
     </>
