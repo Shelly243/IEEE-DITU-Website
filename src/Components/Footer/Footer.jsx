@@ -6,7 +6,7 @@ import facebook from "../../assets/facebook.png"
 import github from "../../assets/github.png"
 import IEEELogo from "../../assets/ieeelogo.png"
 import DITLogo from "../../assets/ditlogo.png"
-import { useNavigate } from 'react-router'
+import { useNavigate } from 'react-router-dom'
 
 function Footer() {
     const navigate=useNavigate();
