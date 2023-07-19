@@ -1,6 +1,8 @@
 .home {
     padding-top: 9.5625rem;
-    
+    margin: 0;
+
+
 }
 
 .dit-image {
@@ -22,80 +24,147 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 90px;
+    margin-top: 5.625rem;
+    margin-bottom:  5.625rem;
 }
 
-.hdg{
+.hdg {
     font-size: 3.5rem;
     color: black;
 }
 
-.container1{
+.container1 {
     display: flex;
     align-items: flex-start;
-    
-  }
-  
-  .image1{
-    margin: -40px 0px 100px 0px;
-    width: 30%;
-  }
-  
-  .content1{
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    height: 28.75rem;
+
+}
+
+.image1 {
+    margin: -2.5rem 0rem 6.25rem 0rem;
+    width: 26%;
+}
+
+.content1 {
     flex: 1;
-    margin-top: 260px;
+    margin-top: 15rem;
     letter-spacing: 0.1em;
     width: 30%;
-  }
-  
-.header{
-    margin-bottom: 20px;
+}
+
+.header {
+    margin-bottom: 1.25rem;
     font-size: 1.9rem;
 }
 
-.paragraph{
+.paragraph {
     line-height: 1.5;
     font-size: 1.3rem;
     width: 80%;
 }
 
-.container2{
+.container2 {
     display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  margin-top: -150px;
-  
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    height: 28.75rem;
 
 }
 
-.image2{
-    margin: -40px 0px 100px 20px;
-    width: 30%;
+.image2 {
+    margin: 0rem 0rem 6.25rem 1.25rem;
+    width: 26%;
     float: right;
 
 }
 
-.content2{
+.content2 {
     flex: 1;
-    margin-right: 100px;
+    margin-right: 6.25rem;
     width: 30%;
-    margin-top: 90px;
+    margin-top: 5.625rem;
     letter-spacing: 0.1em;
 }
 
-.header2{
+.header2 {
     text-align: right;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     font-size: 1.9rem;
-    margin-right: 12px;
+    margin-right: 0.75rem;
 }
-.paragraph2{
+
+.paragraph2 {
     text-align: right;
     line-height: 1.5;
     font-size: 1.3rem;
     width: 85%;
-    margin-left: 130px;
+    margin-left: 8.125rem;
 }
-#succ{
-    margin-top: -100px;
+
+
+
+@media screen and (max-width: 768px) {
+
+    .content1 {
+        margin-top: 140px;
+    }
+
+    .header,
+    .header2 {
+        font-size: 2rem;
+    }
+
+    .paragraph,
+    .paragraph2 {
+        font-size: 1rem;
+    }
+
+    .hdg {
+        font-size: 2.5rem;
+
+    }
+
+    .heading {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .content1 {
+        margin-top: 40px;
+    }
+
+
+    .header,
+    .header2 {
+        font-size: 1rem;
+    }
+
+    .paragraph,
+    .paragraph2 {
+        font-size: 0.875rem;
+    }
+
+    .hdg {
+        font-size: 1.5rem;
+
+    }
+
+    .heading {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .image1,
+    .image2,
+    .image3 {
+        width: 35%;
+    }
+
 }

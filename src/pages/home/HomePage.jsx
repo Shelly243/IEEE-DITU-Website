@@ -50,11 +50,11 @@ function HomePage() {
       </div>
 
 
-      <div className='container1' id='succ'>
+      <div className='container1' >
 
         <img src={Succeed} alt="My Image" className='image1' />
 
-        <div className='content1'>
+        <div className='content1' >
           <h3 className='header'>SUCCEED</h3>
           <p className='paragraph'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
