@@ -103,14 +103,24 @@
 }
 
 @media only screen and (max-width: 405px){
-    .footer>.footerLogo>.ieeeLogo {
-        width: 12.8125rem;
-        height: 2.512rem;
+
+    .footer{
+        padding: 1rem;
+    }
+
+    .footer>.footerIconLogo>img {
+        width: 2.05531rem;
+        height: 2.04031rem;
     }
 
     .footer>.footerLogo>.ditLogo {
         width: 3.79163rem;
-        height: 3.66775rem;
+        height: 4.66775rem;
+    }
+
+    .footer>.footerLogo>.ieeeLogo {
+        width: 10.8125rem;
+        height: 2.512rem;
     }
 
     .footer>.footerIconLogo {
@@ -118,7 +128,7 @@
     }
 
     .footer>.teamLink {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .footer>.copyright {
