@@ -1,50 +1,101 @@
-.about{
+.about {
     padding-top: 6.5625rem;
 }
 
-.flex-container{
+.about>.upImage {
     display: flex;
-    flex-direction: row;
-    width: 890.642 px;
-    height: 430px;
-    flex-shrink: 0;
-    position: relative;
-    top: 176px;
-    margin-left:274px ;
-    margin-right: 273.36px;
-    border-radius: 21.997px;
-    background: #FFFEFE;
-    box-shadow: 2.8382837772369385px 2.8382837772369385px 33.34983444213867px 0.7095709443092346px rgba(0, 0, 0, 0.25);
-}  
-.content{
-  position: relative;
-  top: 176px;
-  margin-left: 106px;
-  margin-right:198px ;
-  padding: auto;
-}
-p{
-   display: flex;
-   width: 1136px;
-   height: 157px;
-   flex-direction: column;
-   flex-shrink: 0;
-   color: #1E1E1E;
-   font-family: Arial;
-   font-size: 24px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: normal;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 4rem;
 }
 
-h1{
+.about>.upImage>img {
+    width: 65rem;
+}
+
+.about>.contentAbt {
     display: flex;
     flex-direction: column;
-    flex-shrink: 0;
+    align-items: start;
+    justify-content: center;
+    margin: 4rem;
+}
+
+.about>.contentAbt>h1 {
     color: #005792;
     font-family: Arial;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.about>.contentAbt>p {
+    color: #1E1E1E;
+    font-family: Arial;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 2rem 0;
+}
+
+@media only screen and (max-width: 1176px){
+    .about>.upImage>img{
+        width: 55rem;
+    }
+    .about>.contentAbt{
+        margin: 2rem;
+    }
+    .about>.contentAbt>h1{
+        font-size: 2rem;
+    }
+    .about>.contentAbt>p{
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .about>.upImage>img{
+        width: 45rem;
+    }
+    .about>.contentAbt{
+        margin: 2rem;
+    }
+    .about>.contentAbt>h1{
+        font-size: 1.75rem;
+    }
+    .about>.contentAbt>p{
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .about>.upImage>img{
+        width: 30rem;
+    }
+    .about>.contentAbt{
+        margin: 2rem;
+    }
+    .about>.contentAbt>h1{
+        font-size: 1.5rem;
+    }
+    .about>.contentAbt>p{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .about>.upImage>img{
+        width: 20rem;
+    }
+    .about>.contentAbt{
+        margin: 2rem;
+    }
+    .about>.contentAbt>h1{
+        font-size: 1.25rem;
+    }
+    .about>.contentAbt>p{
+        font-size: 1rem;
+    }
 }

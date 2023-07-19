@@ -149,13 +149,17 @@
     }
 }
 
+@media only screen and (max-width: 500px){
+    .navbar>.navcontainer{
+        height: 5.5625rem;
+    }
+    .navbar>.navcontainer>svg {
+        font-size: 2.2rem;
+    }
+}
+
 @media only screen and (max-width: 460px){
     .navbar>.navcontainer>.imgdiv>img{
         width: 15rem;
     }
-
-    .navbar>.navcontainer>svg {
-        font-size: 2.5rem;
-    }
-
 }
