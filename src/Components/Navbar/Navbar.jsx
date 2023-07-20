@@ -1,6 +1,5 @@
 import React, {useState} from "react";
-import img from "../../assets/ieeelogo.png";
-import logo from "../../assets/navbar-logo.png"
+import img from "../../assets/ieeeLogo.svg";
 import { Link, useLocation } from "react-router-dom";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
