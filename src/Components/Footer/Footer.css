@@ -14,7 +14,7 @@
     gap: 4.07rem;
 }
 
-.footer>.footerIconLogo>img {
+.footer>.footerIconLogo>svg {
     width: 2.55531rem;
     height: 2.54031rem;
     margin-bottom: 1.5rem;
@@ -87,7 +87,7 @@
         font-size: 1.3rem;
     }
 
-    .footer>.footerIconLogo>img {
+    .footer>.footerIconLogo>svg {
         width: 2.25531rem;
         height: 2.24031rem;
     }
@@ -108,7 +108,7 @@
         padding: 1rem;
     }
 
-    .footer>.footerIconLogo>img {
+    .footer>.footerIconLogo>svg {
         width: 2.05531rem;
         height: 2.04031rem;
     }
