@@ -25,7 +25,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 5.625rem;
-    margin-bottom:  5.625rem;
+    margin-bottom: 5.625rem;
 }
 
 .hdg {
@@ -50,19 +50,22 @@
 .content1 {
     flex: 1;
     margin-top: 15rem;
-    letter-spacing: 0.1em;
+   
     width: 30%;
 }
 
 .header {
     margin-bottom: 1.25rem;
     font-size: 1.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .paragraph {
     line-height: 1.5;
     font-size: 1.3rem;
     width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container2 {
@@ -79,6 +82,7 @@
     margin: 0rem 0rem 6.25rem 1.25rem;
     width: 26%;
     float: right;
+    display: flex;
 
 }
 
@@ -87,7 +91,6 @@
     margin-right: 6.25rem;
     width: 30%;
     margin-top: 5.625rem;
-    letter-spacing: 0.1em;
 }
 
 .header2 {
@@ -95,6 +98,8 @@
     margin-bottom: 1.25rem;
     font-size: 1.9rem;
     margin-right: 0.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .paragraph2 {
@@ -103,24 +108,28 @@
     font-size: 1.3rem;
     width: 85%;
     margin-left: 8.125rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
     .content1 {
-        margin-top: 140px;
+        margin-top: 40px;
+    }
+    .content2 {
+        margin-top: 0px;
     }
 
     .header,
     .header2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .paragraph,
     .paragraph2 {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .hdg {
@@ -132,9 +141,12 @@
         margin-top: 70px;
         margin-bottom: 70px;
     }
+    .container1,.container2{
+        height: 280px;
+    }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 512px) {
 
     .content1 {
         margin-top: 40px;
@@ -146,8 +158,7 @@
         font-size: 1rem;
     }
 
-    .paragraph,
-    .paragraph2 {
+    .paragraph {
         font-size: 0.875rem;
     }
 
@@ -162,9 +173,26 @@
     }
 
     .image1,
-    .image2,
-    .image3 {
+    .image2 {
         width: 35%;
+        margin-top: 0px;
+    }
+
+    .container1,
+    .container2 {
+        height: 300px;
+    }
+
+    .content2 {
+        margin-top: 0px;
+        margin-right: 70px;
+    }
+    .paragraph2{
+        font-size: 0.875rem;
+        margin-left: 10px;
+        height: 200px;
+        width: 225px;
+
     }
 
 }
