@@ -1,12 +1,12 @@
 import React from 'react'
 import "./Footer.css"
-import linkedIn from "../../assets/linkedin.png"
-import instagram from "../../assets/instagram.png"
-import facebook from "../../assets/facebook.png"
-import github from "../../assets/github.png"
 import IEEELogo from "../../assets/ieeelogo.png"
 import DITLogo from "../../assets/ditlogo.png"
 import { useNavigate } from 'react-router-dom'
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 function Footer() {
     const navigate=useNavigate();
@@ -34,10 +34,10 @@ function Footer() {
     return (
         <div className='footer'>
             <div className="footerIconLogo">
-                <img src={linkedIn} onClick={moveToLinkedin} alt="img not available" />
-                <img src={instagram} onClick={moveToInstagram} alt="img not available" />
-                <img src={facebook} onClick={moveToFacebook} alt="img not available" />
-                <img src={github} onClick={moveToGithub} alt="img not available" />
+                <LinkedInIcon onClick={moveToLinkedin}/>
+                <InstagramIcon onClick={moveToInstagram}/>
+                <FacebookOutlinedIcon onClick={moveToFacebook}/>
+                <GitHubIcon onClick={moveToGithub}/>
             </div>
             <div className="teamLink" onClick={navigateToDevelopersPage}>
                 Design And Development team.
