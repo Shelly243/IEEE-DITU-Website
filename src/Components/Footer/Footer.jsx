@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Footer.css"
 import IEEELogo from "../../assets/ieeeLogo.svg"
-import DITLogo from "../../assets/ditLogo.svg"
+import DITLogo from "../../assets/DitLogo.svg"
 import { useNavigate } from 'react-router-dom'
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
