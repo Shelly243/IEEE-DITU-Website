@@ -64,7 +64,7 @@ function HomePage() {
         </div>
       </div>
 
-      <div><h3> Home page goes brrrr.... </h3></div>
+      
 
     </div>
   )
