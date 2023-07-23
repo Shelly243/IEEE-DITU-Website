@@ -1,3 +1,26 @@
-.team{
-    padding-top: 6.5625rem;
+.teams {
+  padding: 3rem 0;
+  font-family: Arial;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 4rem;
+  width: 100vw;
+}
+
+.counsellors,
+.studentCounsil {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.counsellors h3,
+.studentCounsil h3 {
+  font-weight: 700;
+  font-size: 2rem;
 }
