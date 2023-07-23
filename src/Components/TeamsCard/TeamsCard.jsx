@@ -1,6 +1,6 @@
 import "./TeamsCard.css";
-import git from "../../assets/github.png";
-import linkedi from "../../assets/linkedin.png";
+import git from "../../assets/github.svg";
+import linkedi from "../../assets/linkedin.svg";
 
 export const TeamsCard = ({
   profileUrl,
