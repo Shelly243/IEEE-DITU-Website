@@ -5,16 +5,13 @@
 
 .dit-image {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%;
+  justify-content: center;
+  margin: 1rem 4rem;
 }
 
 .dit-image img {
-  display: block;
-  margin: 0 auto;
-  width: 94%;
-  height: 40rem;
+  width: 65rem;
 }
 
 .heading {
@@ -107,7 +104,18 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@media screen and (max-width: 1176px){
+  .dit-image img {
+    width: 55rem;
+  }
+}
+
 @media screen and (max-width: 900px) {
+
+  .dit-image img {
+    width: 45rem;
+  }
+
   .content1 {
     margin-top: 40px;
   }
@@ -139,7 +147,18 @@
   }
 }
 
+@media screen and (max-width:768px){
+  .dit-image img {
+    width: 30rem;
+  }
+}
+
 @media screen and (max-width: 512px) {
+
+  .dit-image img {
+    width: 20rem;
+  }
+
   .content1 {
     margin-top: 40px;
   }

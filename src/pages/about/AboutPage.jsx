@@ -1,6 +1,6 @@
 import React from 'react'
 import "./AboutPage.css"
-import upImage from "../../assets/Image.png"
+import upImage from "../../assets/aboutImg.png"
 
 function AboutPage() {
   return (

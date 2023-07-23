@@ -2,18 +2,18 @@
   padding-top: 3rem;
 }
 
-.about > .upImage {
+.about>.upImage {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 1rem 4rem;
 }
 
-.about > .upImage > img {
+.about>.upImage>img {
   width: 65rem;
 }
 
-.about > .contentAbt {
+.about>.contentAbt {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -21,7 +21,7 @@
   margin: 4rem;
 }
 
-.about > .contentAbt > h1 {
+.about>.contentAbt>h1 {
   color: #005792;
   font-family: Arial;
   font-size: 2.5rem;
@@ -30,7 +30,7 @@
   line-height: normal;
 }
 
-.about > .contentAbt > p {
+.about>.contentAbt>p {
   color: #1e1e1e;
   font-family: Arial;
   font-size: 1.5rem;
@@ -41,61 +41,73 @@
 }
 
 @media only screen and (max-width: 1176px) {
-  .about > .upImage > img {
+  .about>.upImage>img {
     width: 55rem;
   }
-  .about > .contentAbt {
+
+  .about>.contentAbt {
     margin: 2rem;
   }
-  .about > .contentAbt > h1 {
+
+  .about>.contentAbt>h1 {
     font-size: 2rem;
   }
-  .about > .contentAbt > p {
+
+  .about>.contentAbt>p {
     font-size: 1.25rem;
   }
 }
 
 @media only screen and (max-width: 900px) {
-  .about > .upImage > img {
+  .about>.upImage>img {
     width: 45rem;
   }
-  .about > .contentAbt {
+
+  .about>.contentAbt {
     margin: 2rem;
   }
-  .about > .contentAbt > h1 {
+
+  .about>.contentAbt>h1 {
     font-size: 1.75rem;
   }
-  .about > .contentAbt > p {
+
+  .about>.contentAbt>p {
     font-size: 1.25rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .about > .upImage > img {
+  .about>.upImage>img {
     width: 30rem;
   }
-  .about > .contentAbt {
+
+  .about>.contentAbt {
     margin: 2rem;
   }
-  .about > .contentAbt > h1 {
+
+  .about>.contentAbt>h1 {
     font-size: 1.5rem;
   }
-  .about > .contentAbt > p {
+
+  .about>.contentAbt>p {
     font-size: 1rem;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .about > .upImage > img {
+  .about>.upImage>img {
     width: 20rem;
   }
-  .about > .contentAbt {
+
+  .about>.contentAbt {
     margin: 2rem;
   }
-  .about > .contentAbt > h1 {
+
+  .about>.contentAbt>h1 {
     font-size: 1.25rem;
   }
-  .about > .contentAbt > p {
+
+  .about>.contentAbt>p {
     font-size: 1rem;
   }
 }
