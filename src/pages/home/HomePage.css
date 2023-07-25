@@ -45,7 +45,6 @@
 .content1 {
   flex: 1;
   margin-top: 15rem;
-
   width: 30%;
 }
 
@@ -150,6 +149,9 @@
 @media screen and (max-width:768px){
   .dit-image img {
     width: 30rem;
+  }
+  .image1{
+    margin: 1.5rem 0rem 6.25rem 0rem !important;
   }
 }
 

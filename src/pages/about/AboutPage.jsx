@@ -30,8 +30,7 @@ function AboutPage() {
 
 
         <h1>About DIT University Student Branch</h1>
-        <p>IEEE Student Branch DIT Univarsity believes in these values of IEEE. We are an enthusiastic community of like-minded envisioners who strive to advance technological innovations and uphold the ethos of IEEE.
-          Gallery IEEE-DIT</p>
+        <p>IEEE Student Branch DIT University believes in these values of IEEE. We are an enthusiastic community of like-minded envisioners who strive to advance technological innovations and uphold the ethos of IEEE.</p>
 
       </div>
     </div>
