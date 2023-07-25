@@ -7,25 +7,24 @@ import "react-multi-carousel/lib/styles.css";
 function CardSlider() {
   const responsive = {
   superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 6
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 1700, min: 1401 },
     items: 4
   },
+  desktop: {
+    breakpoint: { max: 1400, min: 1035 },
+    items: 3
+  },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
+    breakpoint: { max: 1034, min: 699 },
     items: 2
   },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 698, min: 0 },
     items: 1
   }
 };
   return (
-    <div>
+    <center>
         <Carousel responsive={responsive}>
             <div><EventsHoriCard /></div>
             <div><EventsHoriCard /></div>
@@ -35,8 +34,10 @@ function CardSlider() {
             <div><EventsHoriCard /></div>
             <div><EventsHoriCard /></div> 
         </Carousel>
-    </div>
+    </center>
+
   )
 }
 
 export default CardSlider
+

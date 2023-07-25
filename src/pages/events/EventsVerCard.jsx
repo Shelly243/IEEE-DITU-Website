@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React/*, { useState }*/ from 'react'
 import './Eventspage.css'
 
-import { useCollapse } from 'react-collapsed'
+/*import { useCollapse } from 'react-collapsed'*/
 
 function EventsVerCard() {
-    const [isExpanded, setExpanded] = useState(false)
-    const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded })
+   {/* const [isExpanded, setExpanded] = useState(false)
+const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded })*/}
 
   return (
     <div>
@@ -22,19 +22,18 @@ function EventsVerCard() {
           <br />
           <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui autem quo voluptatem. Nihil, commodi molestiae fugiat assumenda quidem tenetur corporis, inventore vitae laboriosam sint illo fuga similique ad maiores iusto!
-          <section {...getCollapseProps()}>
+          {/*<section {...getCollapseProps()}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim veritatis adipisci molestias voluptas minima natus, provident suscipit laborum animi ad dolor laudantium assumenda repellat totam voluptate ut inventore exercitationem vero.
-          </section>   
+  </section>*/}   
           </p>
           <br />
-          {/*button*/}
+          {/*button
           <div>
           <button className='read-more-less-btn' {...getToggleProps({onClick: () => setExpanded((prevExpanded) => !prevExpanded),})}>
           {isExpanded ? 'Collapse' : 'Expand'}
-          </button>
+</button>*/}
         </div>
         </div>
-    </div>
     </div>
   );
 }

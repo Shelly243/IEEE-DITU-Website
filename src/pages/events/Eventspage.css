@@ -2,10 +2,16 @@
   display: flex;
   flex-direction: column;
   padding: 3.5625rem 0 0 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.event-page-container h1 {
+  padding: 2rem;
 }
 
 .event-content-section {
-  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 7rem;
   margin-bottom: 2rem;
 }
 
@@ -18,8 +24,8 @@
 
 .hori-card {
   width: 18rem;
-  height: 22rem;
-  box-shadow: 2px 2px 20px lightblue;
+  height: 20rem;
+  box-shadow: 2px 2px 20px rgb(119, 190, 214);
   border-radius: 0.5rem;
   margin: 1rem;
 }
@@ -40,10 +46,10 @@
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  height: 10rem;
+  height: 8rem;
 }
 
-.hori-card-btn {
+/*.hori-card-btn {
   text-decoration: none;
   border-radius: 0.5rem;
   margin: 0.5rem;
@@ -64,9 +70,9 @@
 .hori-card-btn:active {
   transform: translateY(0.1rem);
   box-shadow: none;
-}
+}*/
 
-.event-ver-cards-container {
+.eventVerCardsContainer {
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -77,10 +83,11 @@
 .ver-card {
   display: flex;
   flex-direction: column;
-  width: 70rem;
-  box-shadow: 2px 2px 20px lightblue;
+  width: 60rem;
+  /*height: 13rem;*/
+  box-shadow: 2px 2px 20px rgb(119, 190, 214);
   border-radius: 0.5rem;
-  margin: 3rem;
+  margin: 2rem 4rem;
   position: relative;
 }
 
@@ -95,11 +102,11 @@
 }
 
 .ver-card .des {
-  margin-left: 12rem;
-  padding: 1rem;
+  margin-left: 10rem;
+  padding: 0.5rem 2rem;
 }
 
-.read-more-less-btn {
+/*.read-more-less-btn {
   background-color: #157fb2;
   color: white;
   border: none;
@@ -107,7 +114,7 @@
   border-radius: 0.5rem;
   padding: 0.5rem;
   width: 8rem;
-  box-shadow: 0.1rem 0.1rem 0.1rem lightblue;
+  box-shadow: 0.1rem 0.1rem 0.1rem #086a9773;
 }
 
 .read-more-less-btn:hover {
@@ -117,4 +124,56 @@
 .read-more-less-btn:active {
   transform: translateY(0.1rem);
   box-shadow: none;
+}*/
+
+@media screen and (max-width: 1176px) {
+  .ver-card {
+    width: 50rem;
+  }
+}
+
+@media screen and (max-width: 1032px) {
+  .ver-card {
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width:850px) {
+  .ver-card {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .event-content-section {
+    padding-right: 2rem;
+  }
+
+  .ver-card {
+    width: 30rem;
+    margin: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .event-content-section {
+    padding-right: 2rem;
+  }
+
+  .ver-card {
+    width: 18rem;
+    margin: 2rem 1rem;
+  }
+
+  .ver-card .image {
+    top: -1rem;
+    height: 12rem;
+    width: 20rem;
+  }
+
+  .ver-card .des {
+    margin-top: 12rem;
+    margin-left: 0;
+    padding: 0.5rem 2rem;
+  }
 }

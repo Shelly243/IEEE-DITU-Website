@@ -26,7 +26,7 @@ function EventsPage() {
          
             {/*event vertical cards section*/}
             <h1>Youthopia</h1>
-            <div className="event-ver-cards-container">
+            <div className="eventVerCardsContainer">
                 <EventsVerCard />
                 <EventsVerCard />
                 <EventsVerCard />

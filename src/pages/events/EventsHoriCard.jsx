@@ -18,8 +18,8 @@ function EventsHoriCard() {
                 <h5>Speaker</h5>
                 <h5>Date</h5>
                 <br />
-                {/*button*/}
-                <a href='_blank' className="hori-card-btn">Read More</a>
+                {/*button
+                <a href='_blank' className="hori-card-btn">Read More</a>*/}
             </div>
         </div>
     </div>
