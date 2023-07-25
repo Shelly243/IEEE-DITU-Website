@@ -31,8 +31,8 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  column-gap: 10rem;
-  row-gap: 2rem;
+  column-gap: 5rem;
+  row-gap: 3.5rem;
   flex-wrap: wrap;
   max-width: 1300px;
 }
