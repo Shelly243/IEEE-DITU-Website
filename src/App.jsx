@@ -10,6 +10,10 @@ import Gallery from "./pages/gallery/Gallery";
 import Footer from "./Components/Footer/Footer"  
 
 function App() {
+  const handleMembership = () => {
+    window.open("https://www.ieee.org/membership/join/index.html", "_blank");
+  };
+  
   return (
     <div className="App">
       <Router>
@@ -23,6 +27,9 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="*" element={<HomePage />} />
         </Routes>
+        <div className="membershipButton">
+          <button className="membership" onClick={handleMembership}>Want to be IEEE global member ?</button>
+        </div>
         <Footer />
       </Router>
     </div>
