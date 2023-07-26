@@ -1,7 +1,9 @@
 import React from 'react'
 
 import CardSlider  from './CardSlider'
-import EventsVerCard from './EventsVerCard';
+
+import { EventsVerCard } from './EventsVerCard';
+import { verCards } from './Eventspagedata.jsx'
 
 function EventsPage() {
   return (
@@ -27,9 +29,20 @@ function EventsPage() {
             {/*event vertical cards section*/}
             <h1>Youthopia</h1>
             <div className="eventVerCardsContainer">
-                <EventsVerCard />
-                <EventsVerCard />
-                <EventsVerCard />
+                {verCards.map((verCard, id) => {
+                return (
+                    <div key={id}>
+                    <EventsVerCard 
+                        verCardImage = {verCard.verCardImage}
+                        verCardTitle = {verCard.verCardTitle} 
+                        verCardCoordinator = {verCard.verCardCoordinator}
+                        verCardSpeaker = {verCard.verCardSpeaker }
+                        verCardDate = {verCard.verCardDate}
+                        verCardContent = {verCard.verCardContent}
+                    />
+                    </div>
+                );
+            })}
             </div>
         </div>
   );

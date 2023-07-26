@@ -1,41 +1,49 @@
 import React/*, { useState }*/ from 'react'
 import './Eventspage.css'
 
-/*import { useCollapse } from 'react-collapsed'*/
+/*import { useCollapse } from 'react-collapsed'
 
-function EventsVerCard() {
-   {/* const [isExpanded, setExpanded] = useState(false)
-const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded })*/}
+const [isExpanded, setExpanded] = useState(false)
+const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded })*/
 
+
+export const EventsVerCard = (
+  {
+    verCardImage,
+    verCardTitle,
+    verCardCoordinator,
+    verCardSpeaker,
+    verCardDate,
+    verCardContent,
+  }
+) => {
   return (
     <div>
         <div className="ver-card">
         {/*image*/}
-        <img className="image" src="https://picsum.photos/200/300" alt="image" />
+        <img className="image" src={ verCardImage } alt="image" />
         {/*description*/}
         <div className="des">
-          <h3>title Here</h3>
+          <h3>{ verCardTitle }</h3>
           <br />
-          <h5>Coordinator</h5>
-          <h5>Speaker</h5>
-          <h5>Date</h5>
+          <h5>Coordinator: { verCardCoordinator }</h5>
+          <h5>Speaker: { verCardSpeaker }</h5>
+          <h5>Date: { verCardDate }</h5>
           <br />
-          <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui autem quo voluptatem. Nihil, commodi molestiae fugiat assumenda quidem tenetur corporis, inventore vitae laboriosam sint illo fuga similique ad maiores iusto!
-          {/*<section {...getCollapseProps()}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim veritatis adipisci molestias voluptas minima natus, provident suscipit laborum animi ad dolor laudantium assumenda repellat totam voluptate ut inventore exercitationem vero.
-  </section>*/}   
-          </p>
+          <p> { verCardContent }</p>
           <br />
           {/*button
+          {/*<section {...getCollapseProps()}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim veritatis adipisci molestias voluptas minima natus, provident suscipit laborum animi ad dolor laudantium assumenda repellat totam voluptate ut inventore exercitationem vero.
+          </section>
           <div>
           <button className='read-more-less-btn' {...getToggleProps({onClick: () => setExpanded((prevExpanded) => !prevExpanded),})}>
           {isExpanded ? 'Collapse' : 'Expand'}
-</button>*/}
+          </button>*/}
         </div>
         </div>
     </div>
   );
 }
 
-export default EventsVerCard
+

@@ -1,24 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .event-page-container {
   display: flex;
   flex-direction: column;
-  padding: 3.5625rem 0 0 2rem;
+  padding: 3.5625rem 2rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .event-page-container h1 {
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 .event-content-section {
-  padding-left: 2rem;
   padding-right: 7rem;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .event-hori-cards-container {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  
   margin-bottom: 2rem;
 }
 
@@ -87,7 +91,7 @@
   /*height: 13rem;*/
   box-shadow: 2px 2px 20px rgb(119, 190, 214);
   border-radius: 0.5rem;
-  margin: 2rem 4rem;
+  margin: 2rem 0;
   position: relative;
 }
 
@@ -145,24 +149,32 @@
 }
 
 @media screen and (max-width: 675px) {
+  .event-page-container {
+      padding: 3.5625rem 0 0 0.8rem;
+  }
+
   .event-content-section {
     padding-right: 2rem;
   }
 
   .ver-card {
     width: 30rem;
-    margin: 2rem 1rem;
+    margin: 2rem 0;
   }
 }
 
 @media screen and (max-width: 580px) {
+  .event-page-container {
+      padding: 3.5625rem 0 0 0.8rem;
+  }
+
   .event-content-section {
     padding-right: 2rem;
   }
 
   .ver-card {
     width: 18rem;
-    margin: 2rem 1rem;
+    margin: 2rem 0;
   }
 
   .ver-card .image {

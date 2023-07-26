@@ -57,3 +57,32 @@ export const sliderCards = [
     },
 ];
 
+export const verCards = [
+    {   
+        id:1,
+        verCardImage: "https://picsum.photos/200/300",
+        verCardTitle: "title1",
+        verCardCoordinator: "blahblah",
+        verCardSpeaker: "blahblah",
+        verCardDate: "dd/mm/yyyy",
+        verCardContent: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit tenetur perferendis obcaecati. Mollitia atque nulla pariatur iste nostrum nisi minus illo est! Nihil non quas alias commodi voluptas nemo dolorum.",
+    },
+    {   
+        id:2,
+        verCardImage: "https://picsum.photos/200/300",
+        verCardTitle: "title2",
+        verCardCoordinator: "blahblah",
+        verCardSpeaker: "blahblah",
+        verCardDate: "dd/mm/yyyy",
+        verCardContent: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit tenetur perferendis obcaecati. Mollitia atque nulla pariatur iste nostrum nisi minus illo est! Nihil non quas alias commodi voluptas nemo dolorum.",
+    },
+    {   
+        id:3,
+        verCardImage: "https://picsum.photos/200/300",
+        verCardTitle: "title3",
+        verCardCoordinator: "blahblah",
+        verCardSpeaker: "blahblah",
+        verCardDate: "dd/mm/yyyy",
+        verCardContent: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit tenetur perferendis obcaecati. Mollitia atque nulla pariatur iste nostrum nisi minus illo est! Nihil non quas alias commodi voluptas nemo dolorum.",
+    },
+];
