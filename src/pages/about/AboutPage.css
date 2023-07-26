@@ -1,5 +1,6 @@
 .about {
   padding-top: 3rem;
+  margin: 0 1.5rem;
 }
 
 .about>.upImage {
@@ -11,6 +12,7 @@
 
 .about>.upImage>img {
   width: 65rem;
+  border-radius: 2.6325rem;
 }
 
 .about>.contentAbt {
