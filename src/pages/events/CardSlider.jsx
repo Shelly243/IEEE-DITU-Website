@@ -1,8 +1,10 @@
 import React from 'react'
-import EventsHoriCard from './EventsHoriCard';
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+
+import { EventsHoriCard } from './EventsHoriCard';
+import { sliderCards } from './Eventspagedata.jsx'
 
 function CardSlider() {
   const responsive = {
@@ -26,13 +28,22 @@ function CardSlider() {
   return (
     <center>
         <Carousel responsive={responsive}>
-            <div><EventsHoriCard /></div>
-            <div><EventsHoriCard /></div>
-            <div><EventsHoriCard /></div>
-            <div><EventsHoriCard /></div>
-            <div><EventsHoriCard /></div>
-            <div><EventsHoriCard /></div>
-            <div><EventsHoriCard /></div> 
+          
+            {sliderCards.map((sliderCard, id) => {
+              return (
+                <div key={id}>
+                <div><EventsHoriCard 
+                  horiCardImage = {sliderCard.horiCardImage}
+                  horiCardTitle = {sliderCard.horiCardTitle}
+                  horiCardCoordinator = {sliderCard.horiCardCoordinator}
+                  horiCardSpeaker = {sliderCard.horiCardSpeaker}
+                  horiCardDate = {sliderCard.horiCardDate}
+                /></div>
+              </div>
+             );
+            })}
+          
+            
         </Carousel>
     </center>
 
