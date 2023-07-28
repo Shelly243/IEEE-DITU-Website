@@ -1,6 +1,6 @@
 export const counsellors = [
   {
-    porfileUrl: "/avatars/ps-sharma.jpeg",
+    porfileUrl: "/avatars/ps-sharma.png",
     name: "P.S Sharma",
     description: "Branch Counsellor, IEEE DITU",
   },
@@ -64,7 +64,7 @@ export const studentCouncil = [
     linkedin: "https://www.linkedin.com/in/shreyal-jain-78b75521b/",
   },
   {
-    porfileUrl: "/avatars/ps-sharma.jpeg",
+    porfileUrl: "/avatars/pratik.svg",
     name: "Pratik Singh",
     description: "Joint Secretary, IEEE DITU",
     github: "https://github.com/Pratik-11",
@@ -85,7 +85,7 @@ export const studentCouncil = [
     linkedin: "https://www.linkedin.com/in/vaibhavaswal/",
   },
   {
-    porfileUrl: "/avatars/ps-sharma.jpeg",
+    porfileUrl: "/avatars/srajan.svg",
     name: "Srajan Sharma",
     description: "Design Head, IEEE DITU",
     github: "",
