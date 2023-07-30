@@ -6,7 +6,7 @@ import Learn from "../../assets/Learn.png"
 import Succeed from "../../assets/Succeed.png"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import upImage from "../../assets/aboutImg.svg"
+import Image2 from "../../assets/Image2.png"
 
 function HomePage() {
   const responsive = {
@@ -41,7 +41,7 @@ function HomePage() {
             <img src={Image} alt="My Image" />
           </div>
           <div className='dit-image'>
-            <img src={upImage} alt="My Image" />
+            <img src={Image2} alt="My Image" />
           </div>
         </Carousel>
       </center>
