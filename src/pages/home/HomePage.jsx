@@ -4,14 +4,47 @@ import Image from "../../assets/Image.png"
 import Create from "../../assets/Create.png"
 import Learn from "../../assets/Learn.png"
 import Succeed from "../../assets/Succeed.png"
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import upImage from "../../assets/aboutImg.svg"
 
 function HomePage() {
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 1700, min: 1401 },
+      items: 1
+    },
+    desktop: {
+      breakpoint: { max: 1400, min: 1035 },
+      items: 1
+    },
+    tablet: {
+      breakpoint: { max: 1034, min: 699 },
+      items: 1
+    },
+    mobile: {
+      breakpoint: { max: 698, min: 0 },
+      items: 1
+    }
+  };
   return (
     <div className='home'>
-
-      <div className='dit-image'>
-        <img src={Image} alt="My Image" />
-      </div>
+      <center>
+        <Carousel
+          responsive={responsive}
+          autoPlay={true}
+          autoPlaySpeed={2500}
+          infinite={true}
+          arrows={false}
+        >
+          <div className='dit-image'>
+            <img src={Image} alt="My Image" />
+          </div>
+          <div className='dit-image'>
+            <img src={upImage} alt="My Image" />
+          </div>
+        </Carousel>
+      </center>
 
       <div className='heading'>
         <h1 className='hdg'>OUR OBJECTIVES</h1>
@@ -64,7 +97,7 @@ function HomePage() {
         </div>
       </div>
 
-      
+
 
     </div>
   )
