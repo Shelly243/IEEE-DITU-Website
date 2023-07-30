@@ -19,6 +19,9 @@ body {
     align-items: center;
     /* width: 100vw; */
     margin: 1.3rem;
+    position: fixed;
+    top: 87vh;
+    right: 1rem;
 }
 
 .membershipButton > button:hover{
@@ -30,7 +33,7 @@ body {
     padding: 1rem;
     border-radius: 2.16963rem;
     background: #005792;
-    border: none;
+    border: 2px solid white;
     cursor: pointer;
     color: #FFF;
     font-family: Arial;
